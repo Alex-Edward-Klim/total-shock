@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .img {
+      display: none;
+      height: 300px;
+      width: 300px;
+    }
+    .spinner {
+      height: 300px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <img class="spinner" src="./spinner.gif" alt="loading">
+  <img class="img" src="./image.jpeg" alt="image" onload="x()">
+  <script>
+    function x() {
+      document.querySelector('.spinner').style.display = 'none';
+      document.querySelector('.img').style.display = 'inline-block';
+    };
+  </script>
+</body>
+</html>
